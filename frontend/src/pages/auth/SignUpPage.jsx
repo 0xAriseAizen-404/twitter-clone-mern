@@ -35,8 +35,8 @@ const SignUpPage = () => {
       if (!res.ok) {
         throw new Error(data.message || "Something went wrong");
       }
-      console.log(data);
-      console.log(mutation.error);
+      // console.log(data);
+      // console.log(mutation.error);
       return data;
     },
     onSuccess: () => {

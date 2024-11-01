@@ -37,7 +37,7 @@ const LoginPage = () => {
       // refetch the authenticatedUser
       queryClient.invalidateQueries({ queryKey: ["authenticatedUser"] });
     },
-    // onError: (error) => toast.error(error.message),
+    onError: (error) => toast.error(error.message),
   });
 
   const handleSubmit = (e) => {
